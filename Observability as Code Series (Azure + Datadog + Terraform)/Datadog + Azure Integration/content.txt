@@ -1,0 +1,170 @@
+The next post in the series should naturally build on the comparison and show how Azure actually sends telemetry into Datadog.
+
+🔗 Datadog + Azure Integration — Building Unified Observability Across Azure
+
+After understanding why enterprises use Azure Monitor + Datadog, the next step is integrating them effectively.
+
+One thing I learned:
+
+👉 Installing the Datadog Agent alone isn't enough.
+
+👉 Azure itself generates valuable platform metrics, logs, and events that should also be part of your observability strategy.
+
+That's where the Azure Integration comes in.
+
+What I Explored
+
+✅ Azure Integration
+
+✅ Azure Resource Metrics
+
+✅ Azure Activity Logs
+
+✅ Azure Service Health
+
+✅ Azure Resource Graph
+
+✅ Datadog Cloud Integration
+
+Why Integrate Azure with Datadog?
+
+Azure services generate a huge amount of telemetry without requiring an agent.
+
+Examples include:
+
+📊 Virtual Machine Metrics
+
+💾 Azure SQL Metrics
+
+📦 Storage Account Metrics
+
+☸️ AKS Cluster Metrics
+
+⚡ App Service Metrics
+
+🌐 Load Balancer Metrics
+
+📈 Azure Monitor Metrics
+
+By integrating Azure directly with Datadog, all of this telemetry becomes available in one centralized platform.
+
+What Data Can Be Collected?
+📊 Metrics
+CPU Usage
+Memory (via Agent)
+Disk Utilization
+Network Throughput
+Storage Capacity
+SQL Performance
+AKS Metrics
+📜 Logs
+Activity Logs
+Diagnostic Logs
+Resource Logs
+Application Logs
+Security Logs
+⚡ Events
+Resource Creation
+Resource Deletion
+Scaling Events
+VM Restart
+Deployment Events
+🔍 Resource Inventory
+
+Datadog automatically discovers Azure resources such as:
+
+Virtual Machines
+AKS Clusters
+App Services
+Azure SQL
+Storage Accounts
+Key Vault
+Load Balancers
+Cosmos DB
+Typical Enterprise Architecture
+
+Azure Resources
+
+↓
+
+Azure Monitor
+
+↓
+
+Azure Integration
+
+↓
+
+Datadog Cloud Integration
+
+↓
+
+Metrics • Logs • Events
+
+↓
+
+Dashboards
+
+↓
+
+Monitors
+
+↓
+
+Teams / Slack / Email 🚀
+
+Azure Integration + Datadog Agent
+
+These are complementary—not competing.
+
+Azure Integration collects:
+
+✅ Platform Metrics
+
+✅ Azure Events
+
+✅ Azure Resource Inventory
+
+Datadog Agent collects:
+
+✅ Host Metrics
+
+✅ Processes
+
+✅ System Logs
+
+✅ Custom Metrics
+
+✅ APM Traces
+
+Together, they provide complete visibility from the Azure platform down to the application.
+
+Why Enterprises Enable Both
+
+By combining Azure Integration with the Datadog Agent, operations teams gain:
+
+✅ Centralized Dashboards
+
+✅ Cross-Service Correlation
+
+✅ Infrastructure Health
+
+✅ Application Performance
+
+✅ Faster Root Cause Analysis
+
+✅ Unified Alerting
+
+Biggest Takeaway
+
+Observability starts with collecting the right telemetry.
+
+Azure Integration gives you visibility into your cloud platform, while the Datadog Agent provides deep insights into the operating system and applications.
+
+Together, they create a unified observability platform capable of monitoring everything from Azure infrastructure to application performance.
+
+In the next post, I'll show how we automated this entire monitoring stack using Terraform, treating Datadog monitors, dashboards, and alerts as code.
+
+#Azure #Datadog #AzureMonitor #CloudMonitoring #Observability #InfrastructureAsCode #Terraform #DevOps #SRE #CloudEngineering #MicrosoftAzure
+
+📌 Next in the Observability as Code Series: Terraform for Datadog — creating monitors, dashboards, and alerts as reusable Infrastructure as Code.
